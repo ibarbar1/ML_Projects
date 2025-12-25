@@ -16,33 +16,24 @@ Given a set of physicochemical attributes of red wine (acidity, sulphates, alcoh
 
 The original quality score is transformed into a binary classification problem:
 
-1 → Good quality (quality ≥ 7)
-
-0 → Bad quality (quality < 7)
+- 1 → Good quality (quality ≥ 7)
+- 0 → Bad quality (quality < 7)
 
 📊 Dataset
 
-Source: UCI Machine Learning Repository
-
-Dataset: Red Wine Quality (Cortez et al., 2009)
-
-Access: Automatically downloaded via kagglehub
+- Source: UCI Machine Learning Repository
+- Dataset: Red Wine Quality (Cortez et al., 2009)
+- Access: Automatically downloaded via kagglehub
 
 Features include:
 
-fixed acidity
-
-volatile acidity
-
-citric acid
-
-chlorides
-
-sulphates
-
-alcohol
-
-and more
+- fixed acidity
+- volatile acidity
+- citric acid
+- chlorides
+- sulphates
+- alcohol
+- and more
 
 Target variable: quality
 
@@ -76,61 +67,35 @@ python main.py
 
 🧪 What Happens When You Run main.py
 
-Dataset is downloaded (cached on subsequent runs)
-
-Exploratory Data Analysis is printed:
-
-dataset shape
-
-missing values
-
-data types
-
-summary statistics
-
-class distribution
-
-Correlation heatmap is displayed
-
-⚠️ Execution pauses until the plot window is closed
-
-Feature preprocessing
-
-multicollinearity reduction
-
-weak predictors removed
-
-target converted to binary
-
-Model training
-
-RandomForestClassifier
-
-stratified train/test split
-
-Evaluation metrics printed
-
-accuracy
-
-precision / recall / F1-score
-
-Sample prediction displayed
-
-"Good Wine" or "Bad Wine"
+1. Dataset is downloaded (cached on subsequent runs)
+2. Exploratory Data Analysis is printed:
+ - dataset shape
+ - missing values
+ - data types
+ - summary statistics
+ - class distribution
+3. Correlation heatmap is displayed
+ - ⚠️ Execution pauses until the plot window is closed
+4. Feature preprocessing
+ - multicollinearity reduction
+ - weak predictors removed
+ - target converted to binary
+5. Model training
+ - RandomForestClassifier
+ - stratified train/test split
+6. Evaluation metrics printed
+ - accuracy
+ - precision / recall / F1-score
+7. Sample prediction displayed
+ - "Good Wine" or "Bad Wine"
 
 🤖 Model Details
-
-Algorithm: Random Forest Classifier
-
-Reasoning:
-
-handles non-linear relationships
-
-robust to feature scaling
-
-interpretable via feature importance
-
-Typical test accuracy: ~80–87%
+- Algorithm: Random Forest Classifier
+- Reasoning:
+ - handles non-linear relationships
+ - robust to feature scaling
+ - interpretable via feature importance
+- Typical test accuracy: ~80–87%
 
 🔮 Example Prediction
 from predictor import predict_quality
@@ -148,31 +113,21 @@ Output:
 
 🧠 Key Skills Demonstrated
 
-Data exploration and validation
-
-Feature selection via correlation analysis
-
-Binary classification framing
-
-Clean modular Python design
-
-Reproducible environment setup
-
-Model evaluation and inference
+- Data exploration and validation
+- Feature selection via correlation analysis
+- Binary classification framing
+- Clean modular Python design
+- Reproducible environment setup
+- Model evaluation and inference
 
 🚀 Possible Extensions
 
-Save trained model using joblib
-
-Add logging instead of print
-
-Expose predictions via FastAPI
-
-Add unit tests (pytest)
-
-Add CI workflow (GitHub Actions)
-
-Power BI integration via REST API
+- Save trained model using joblib
+- Add logging instead of print
+- Expose predictions via FastAPI
+- Add unit tests (pytest)
+- Add CI workflow (GitHub Actions)
+- Power BI integration via REST API
 
 📜 License
 
